@@ -1,0 +1,26 @@
+/* FORM STYLE */
+
+input[type="text"], input[type="email"]{
+    height: 45px;
+    outline: none;
+    border: none;
+    background: #ccc2c2;
+}
+
+form textarea {
+    outline: none;
+    border: none;
+    background: #ccc2c2;
+
+}
+
+
+
+/* BUTTON HOVER */
+
+.btn:hover {
+    opacity: .9;
+    border: 2px solid var(--btn-bg);
+    background: transparent;   
+    color: #000000;
+}

@@ -1,0 +1,112 @@
+ 
+ html, body {
+     height: 100%;
+     width: 100%;
+     
+ }
+ 
+ /* GLOBAL VARIABLE */
+ :root {
+
+    /* BUTTONS */
+    --btn-bg: #C9A96A;
+    --btn-width: 130px;
+    --btn-height: 39px;
+    --btn-fontSize: 16px;
+    --btn-color: #ffffff;
+ }
+
+ /* GLOBAL STYLE */
+
+ .btn {
+    background: var(--btn-bg);
+    color: #ffffff;
+    font-size: 16px;
+    width: var(--btn-width);
+    height: var(--btn-height);
+}
+
+.btn:hover {
+    opacity: .9;
+    border: 2px solid var(--btn-bg);
+    background: transparent;   
+    color: var(--btn-color);
+}
+
+/* HEADER STYLE */
+ 
+.col {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+
+ .bg__Image {
+     background: url("../assets/Mask\ Group\(3\).png") no-repeat center center fixed;
+     background-color: #222;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+     height: 100vh;
+ } 
+
+
+ /* ABOUT US STYLES */
+
+ h5 {
+    color: #939393;
+    font-size: 25px;
+ }
+
+ h1 {
+    font-size: 52px;
+    line-height: 68px;
+ }
+
+ h1 p {
+    font-size: 25px;
+    line-height: 40px;
+ }
+
+ .dot-Holder {
+     position: relative;
+ }
+ 
+ .img-dot {
+     position: absolute;
+     left: 0;
+     bottom: 0;
+ }
+
+ .img-cover {
+    width: 499px;
+    height: 602px;
+
+ }
+
+ .img-wrapper {
+     position: relative;
+ }
+
+ .img-wrapper  span{
+     position: absolute;
+     width: 200px;
+     height: 200px;
+     bottom: -30;
+     left: 70%; 
+     z-index: -1;
+     background: #C9A96A;
+ }
+
+ span {
+     font-size: 13px;
+ }
+
+
+ /* NOTIFICATION */
+ .container-fluid {
+     background-color: #000000;
+     
+ }
