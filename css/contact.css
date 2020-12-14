@@ -7,11 +7,10 @@ input[type="text"], input[type="email"]{
     background: #ccc2c2;
 }
 
-form textarea {
-    outline: none;
-    border: none;
-    background: #ccc2c2;
-
+textarea {
+    outline: none !important;
+    border: none !important;
+    background-color: #ccc2c2 !important;
 }
 
 
@@ -23,4 +22,13 @@ form textarea {
     border: 2px solid var(--btn-bg);
     background: transparent;   
     color: #000000;
+}
+
+ /* FOOTER */
+
+ span a {
+    padding: 15px;
+    background: #222;
+    color: #ffffff;
+    border-radius: 50%;
 }

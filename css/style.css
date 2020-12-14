@@ -110,3 +110,28 @@
      background-color: #000000;
      
  }
+
+ form .input {
+     background: #222;
+     outline: none;
+     border: none;
+     height: 45px;
+ }
+
+ form .btn {
+    height: 45px;
+ }
+
+ /* FOOTER */
+
+ span a {
+     padding: 15px;
+     background: #222;
+     color: #ffffff;
+     border-radius: 50%;
+ }
+
+ span a:hover {
+    color: #ffffff;
+ }
+

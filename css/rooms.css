@@ -30,3 +30,16 @@
     background: #C9A96A;
 
 }
+
+ /* FOOTER */
+
+ span a {
+    padding: 15px;
+    background: #222;
+    color: #ffffff;
+    border-radius: 50%;
+}
+
+span a:hover {
+    color: #ffffff;
+ }
