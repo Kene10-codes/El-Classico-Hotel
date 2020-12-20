@@ -135,17 +135,68 @@
 
      </div>
 
-     <!-- GALLERY -->
-     
-     
-     
+     <!-- GALLERY WITH MASONRY -->
+     <div class="container">
+        <h2>Gallery</h2>
+        <p>Explore the beautiful parts of the hotel.</p>
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center my-5">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Previous</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">All</a></li>
+              <li class="page-item"><a class="page-link" href="#">Rooms/Suites</a></li>
+              <!-- <li class="page-item"><a class="page-link" href="#">Restaurants</a></li>
+              <li class="page-item"><a class="page-link" href="#">Meeting rooms</a></li>
+              <li class="page-item"><a class="page-link" href="#">Swimming pools</a></li> -->
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+        <div class="card-columns">
+            <div class="card">
+                <img src="assets/Mask Group(4).png"  alt="">
+            </div>
+
+            <div class="card">
+                <img src="assets/Mask Group(10).png" alt="">
+            </div>
+            <div class="card">
+                <img src="assets/Mask Group(9).png" alt="">
+            </div>         
+       
+            <div class="card">
+                <img src="assets/Mask Group(11).png" alt="">
+            </div>
+
+            <div class="card">
+                <img src="assets//Mask Group(5).png" alt="">
+            </div>
+            <div class="card">
+                <img src="assets/Mask Group(6).png"alt="">
+            </div>
+            
+            <div class="card">
+                <img src="assets/Mask Group(7).png"  alt="">
+            </div>
+               
+            <div class="card">
+                <img src="assets/Mask Group(8).png" alt="">
+            </div>
+
+          
+        </div>
+     </div>
+
 
      <!-- NOTIFICATIONS -->
      <div class="container-fluid mt-5 h-45 pb-5">
-         <div class="row ">
+         <div class="row">
              <div class="col-md-12">
                  <div class="d-flex flex-column justify-content-center align-items-center">
-                     <h2 class="pt-5 text-white">Would you like to receive lifestyle news?</h2>
+                     <h4 class="pt-5 text-white">Would you like to receive lifestyle news?</h4>
                      <p class="text-white mb-lg-5">Special Offers and Unique Proposals</p>
                      <form action="" class="form-inline my-2 my-lg-0">
                          <input 
@@ -155,7 +206,7 @@
                          id="email"
                          aria-label="Email"
                          >
-                         <button class="btn mx-0 my-0 my-sm-0" type="submit" ><i class="fas fa-arrow-right"></i></button>
+                         <button class="btn mx-auto my-0 my-sm-0 btn-email" type="submit" ><i class="fas fa-arrow-right"></i></button>
                         </div>
                      </form>   
              </div>
@@ -181,17 +232,15 @@
                            <path d="M8.30327 1.99154V8.65658H12.4493V9.625H7.29205V1.99154H8.30327Z" fill="white"/>
                            </svg>           
                     </div>
-                    <div class="col-md-4 mx-auto">
-                        <div>
-                           <p class="text-white">Copyright &copy; 2020 All rights reserved</p> 
-                        </div>
-    
+                    <div class="col-md-4 mx-auto d-flex flex-column justify-content-center align-items-center">
+                           <p class="text-white copyright-text">Copyright &copy; 2020 All rights reserved</p> 
+                    
                     </div>
-                 <!-- SOCIAL ICONS -->
-                 <div class="col-md-4 d-flex flex-row ">
-                    <span class="px-5"><a href="#"><i class="fab fa-facebook fa-1x"></i></a></span>
-                    <span class="pr-5"><a href="#"><i class="fab fa-twitter fa-1x"></i></a></span>
-                    <span class="pr-5"><a href="#"><i class="fab fa-instagram fa-1x"></i></a></span>
+                 <!-- SOCIAL ICONS FROM FONT AWESOME -->
+                 <div class="col-md-4 d-flex flex-row justify-content-center align-items-center">
+                    <span class="px-lg-3"><a href="#"><i class="fab fa-facebook fa-1x"></i></a></span>
+                    <span class="pr-lg-3"><a href="#"><i class="fab fa-twitter fa-1x"></i></a></span>
+                    <span><a href="#"><i class="fab fa-instagram fa-1x"></i></a></span>
                   
                 </div>
                 </div>
@@ -202,11 +251,9 @@
 
     <!-- JQUERY CDN -->
     <!-- BOOTSTRAP JAVASCRIPT -->
-    <!-- FONT AWESOME JAVASCRIPT -->
     <!-- CUSTOM JAVASCRIPT  --> 
     <script src="js/jquery3.5.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/all.js"></script>
     <script src="js/main.js"></script>
   
 </body>

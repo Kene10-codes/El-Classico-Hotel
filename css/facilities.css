@@ -1,8 +1,39 @@
- /* FOOTER */
+/* ROOMS IMAGES */
+
+
+
+
+
+
+/* FOOTER */
 
  span a {
     padding: 15px;
     background: #222;
     color: #ffffff;
     border-radius: 50%;
+}
+
+
+ /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+ @media (min-width: 360x) {  
+    
+}
+
+@media (max-width: 768px) {  
+ 
+
+  
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) { 
+    img {
+        max-width: 100%;
+    }
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+ 
 }

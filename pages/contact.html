@@ -67,13 +67,33 @@
           </div>
 
           <div class="col-md-6">
-              <form action="" class="form-inline-block my-2 my-lg-0">
-                  <input type="text" placeholder="Name" name="name" id="name" class="px-3 py-3 text-muted ">
-                  <input type="email" name="email"  placeholder="Email" id="email" class="ml-lg-4 px-3 py-3 text-muted">
-                   <textarea name="message" id="message" placeholder="Message..." cols="30" rows="8" class="mt-5 form-control">
-                   </textarea> <br>
-                   <button type="submit" class="btn mx-0 my-0 my-sm-0 text-uppercase my-lg-5">send</button>
-              </form>
+              <!-- PHP MAIL FUNCTION -->
+              <?php
+               if(isset($_REQUEST['email']))
+               {
+                   $admin_email = 'nwobodokenechukwu2@gmail.com';
+                   $email = $_REQUEST['email'];
+                   $name = $_REQUEST['name'];
+                   $message = $_REQUEST['message'];
+                   mail($admin_email, "$name", $message, "From:" . $email);
+                   echo "Thank you for contacting us!";
+                   
+               }
+               else {
+                   ?> 
+                   <form action="" method="POST" class="form-inline-block my-2 my-lg-0">
+                    <input type="text" placeholder="Name" name="name" id="name" class="px-3 py-3 text-muted ">
+                    <input type="email" name="email"  placeholder="Email" id="email" class="ml-lg-4 px-3 py-3 text-muted">
+                     <textarea name="message" id="message" placeholder="Message..." cols="30" rows="8" class="mt-5 form-control">
+                     </textarea> <br>
+                     <button type="submit" class="btn mx-0 my-0 my-sm-0 text-uppercase my-lg-5">send</button>
+                </form>
+
+               
+              <?php 
+            } 
+            ?>
+             
           </div>
       </div>
   </div>
@@ -107,17 +127,14 @@
                         <div>
                            <p class="text-white">Copyright &copy; 2020 All rights reserved</p> 
                         </div>
-    
                     </div>
-                 <!-- SOCIAL ICONS -->
+                   <!-- SOCIAL ICONS FROM FONT AWESOME -->
                  <div class="col-md-4 d-flex flex-row mx-auto">
                     <span class="px-5"><a href="#"><i class="fab fa-facebook fa-1x"></i></a></span>
                     <span class="pr-5"><a href="#"><i class="fab fa-twitter fa-1x"></i></a></span>
-                    <span class="pr-5"><a href="#"><i class="fab fa-instagram fa-1x"></i></a></span>
-                  
+                    <span class="pr-5"><a href="#"><i class="fab fa-instagram fa-1x"></i></a></span>                 
                 </div>
                 </div>
-
             </footer>
         </div>
 

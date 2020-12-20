@@ -6,6 +6,11 @@
 
 .img-wrapper {
     position: relative;
+
+}
+
+.img-wrapper-left img, .img-wrapper-right img {
+    max-width: 100%;
 }
 
 .img-wrapper-left span {
@@ -16,6 +21,8 @@
     right: 75%; 
     z-index: -1;
     background: #C9A96A;
+    max-width: 100%;
+   
 
 }
 
@@ -28,7 +35,6 @@
     left: 85%; 
     z-index: -1;
     background: #C9A96A;
-
 }
 
  /* FOOTER */
@@ -43,3 +49,33 @@
 span a:hover {
     color: #ffffff;
  }
+
+
+ /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 360x) {  
+    
+  }
+  
+@media (max-width: 768px) {  
+    .img-wrapper-left span {
+        right: 50%;     
+    
+    }
+
+    .img-wrapper-right span {
+        left: 50%; 
+    }
+    
+  }
+  
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+ 
+  }
+   
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+   
+  }
+  
+  

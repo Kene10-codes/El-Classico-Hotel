@@ -2,6 +2,7 @@
  html, body {
      height: 100%;
      width: 100%;
+   
      
  }
  
@@ -16,7 +17,7 @@
     --btn-color: #ffffff;
  }
 
- /* GLOBAL STYLE */
+ /* GLOBAL STYLES */
 
  .btn {
     background: var(--btn-bg);
@@ -33,7 +34,7 @@
     color: var(--btn-color);
 }
 
-/* HEADER STYLE */
+/* HEADER STYLES */
  
 .col {
    position: absolute;
@@ -83,6 +84,7 @@
  .img-cover {
     width: 499px;
     height: 602px;
+    max-width: 100%;
 
  }
 
@@ -100,12 +102,27 @@
      background: #C9A96A;
  }
 
+ svg {
+    max-width: 100%;
+}
  span {
      font-size: 13px;
  }
 
 
- /* NOTIFICATION */
+ /* GALLERY STYLES */
+
+ .row .img-right {
+     padding-left: 220px;
+
+ }
+
+ .row .img-left, .img-center {
+    padding-left: 170px;
+    /* margin-left: 5px */
+ }
+
+ /* NOTIFICATION STYLE */
  .container-fluid {
      background-color: #000000;
      
@@ -135,3 +152,47 @@
     color: #ffffff;
  }
 
+
+
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (max-width: 360x) {  
+    .card-columns {column-count: 1;}
+    
+  }
+  .copyright-text {
+    padding: 10px 0 15px 0 !important;
+}
+  
+@media (max-width: 768px) {  
+    .card-columns {column-count: 1;}
+    .img-dot { display: none;}
+    .img-wrapper span {  
+        width: 200px;
+        height: 200px;
+        left: 50%; 
+    }
+
+    .btn-email {
+        width: 100px;
+        height: 35px !important;
+        margin-top: 10px !important;
+    }
+    
+    .copyright-text {
+        padding: 15px 0 20px 0 !important;
+    }
+
+  }
+  
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+   .card-columns {column-count: 1;}
+  }
+   
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+     .card-columns {column-count: 2;} 
+  }
+  
+  
