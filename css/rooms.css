@@ -52,8 +52,22 @@ span a:hover {
 
 
  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 360x) {  
-    
+@media (max-width: 360px) {  
+    .copyright-text {
+        padding: 10px 0 15px 0 !important;
+    }
+    .img-wrapper-left span {
+        width: 180px !important;
+        right: 45% !important; 
+    }
+    .img-wrapper-right span {
+        width: 180px !important;
+        left: 42% !important; 
+    }
+    .icons span {
+        padding-right: 8px;
+    }
+     
   }
   
 @media (max-width: 768px) {  

@@ -119,7 +119,6 @@
 
  .row .img-left, .img-center {
     padding-left: 170px;
-    /* margin-left: 5px */
  }
 
  /* NOTIFICATION STYLE */
@@ -156,23 +155,38 @@
 
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (max-width: 360x) {  
+@media (max-width: 360px) {  
     .card-columns {column-count: 1;}
-    
+    .copyright-text {
+        padding: 10px 0 10px 0 !important;
+     
+    }    
+    .text-size span {
+        font-size: 9px;
+    }
+    .img-wrapper  span {
+        width: 185px !important;
+        left: 40% !important; 
+    }
+    .gallery-text {
+        font-size: 15px;
+    }
+    .text {
+        font-size: 15px;
+        margin: 15px 0 15px 0 !important;
+    }
+    .icons span {
+        padding-right: 8px;
+    }
   }
-  .copyright-text {
-    padding: 10px 0 15px 0 !important;
-}
-  
+ 
 @media (max-width: 768px) {  
     .card-columns {column-count: 1;}
     .img-dot { display: none;}
     .img-wrapper span {  
         width: 200px;
-        height: 200px;
         left: 50%; 
     }
-
     .btn-email {
         width: 100px;
         height: 35px !important;
@@ -186,8 +200,11 @@
   }
   
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
+@media (max-width: 992px) { 
    .card-columns {column-count: 1;}
+   .hidden-link {
+    display: none;
+    }
   }
    
 /* Extra large devices (large desktops, 1200px and up) */
