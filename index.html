@@ -1,3 +1,7 @@
+<?php
+  include_once('db.php');
+?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -149,8 +153,8 @@
                 <a class="page-link" href="#" tabindex="-1">Previous</a>
               </li>
               <li class="page-item"><a class="page-link" href="#">All</a></li>
-              <li class="page-item"><a class="page-link" href="#">Rooms/Suites</a></li>
-              <li class="page-item hidden-link"><a class="page-link" href="#">Restaurants</a></li>
+              <li class="page-item"><a class="page-link restaurant-link" href="#">Rooms/Suites</a></li>
+              <li class="page-item hidden-link restaurant-list"><a class="page-link" href="#">Restaurants</a></li>
               <li class="page-item hidden-link"><a class="page-link" href="#">Meeting rooms</a></li>
               <li class="page-item hidden-link"><a class="page-link" href="#">Swimming pools</a></li>
               <li class="page-item">
@@ -159,29 +163,29 @@
             </ul>
           </nav>
         <div class="card-columns">
-            <div class="card">
+            <div class="card img1">
                 <img src="assets/Mask Group(4).png"  alt="">
             </div>
 
-            <div class="card">
+            <div class="card img2">
                 <img src="assets/Mask Group(10).png" alt="">
             </div>
-            <div class="card">
+            <div class="card img-resize">
                 <img src="assets/Mask Group(9).png" alt="">
             </div>         
        
-            <div class="card">
+            <div class="card img3">
                 <img src="assets/Mask Group(11).png"  alt="">
             </div> 
 
-            <div class="card">
+            <div class="card img4">
                 <img src="assets//Mask Group(5).png" alt="">
             </div>
-            <div class="card">
+            <div class="card img5">
                 <img src="assets/Mask Group(6).png"alt="">
             </div>
             
-            <div class="card">
+            <div class="card img6">
                 <img src="assets/Mask Group(7).png"  alt="">
             </div>
                
@@ -199,12 +203,13 @@
                  <div class="d-flex flex-column justify-content-center align-items-center">
                      <h4 class="pt-5 text-white">Would you like to receive lifestyle news?</h4>
                      <p class="text-white mb-lg-5 text">Special Offers and Unique Proposals</p>
-                     <form action="" class="form-inline my-2 my-lg-0">
+                     <form action="" method="POST" class="form-inline my-2 my-lg-0">
                          <input 
                          type="email"
                          placeholder="Email Address" 
                          class="form-control py-2 px-4 text-muted input"
                          id="email"
+                         name="email"
                          aria-label="Email"
                          >
                          <button class="btn mx-auto my-0 my-sm-0 btn-email" type="submit" ><i class="fas fa-arrow-right"></i></button>

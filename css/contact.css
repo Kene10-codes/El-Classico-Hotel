@@ -5,6 +5,7 @@ input[type="text"], input[type="email"]{
     outline: none;
     border: none;
     background: #ccc2c2;
+    border-radius: 4px;
 }
 
 textarea {
@@ -43,9 +44,11 @@ textarea {
 }
 
 @media (max-width: 768px) {  
- 
+    input[type="text"], input[type="email"]{
+       padding: 3px;
+    }
+    
 
-  
 }
 
 /* Large devices (desktops, 992px and up) */
