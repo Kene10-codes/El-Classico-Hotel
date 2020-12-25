@@ -23,26 +23,26 @@ if(isset($_POST['submit'])) {
 
 }
 
-require_once '/path/to/vendor/autoload.php';
+// require_once '/path/to/vendor/autoload.php';
 
-// Create the Transport
-$transport = (new Swift_SmtpTransport('smtp.example.org', 25))
-  ->setUsername('nwobodokeenechukwu2')
-  ->setPassword('Godsgrace123#1')
-;
+// // Create the Transport
+// $transport = (new Swift_SmtpTransport('smtp.example.org', 25))
+//   ->setUsername('')
+//   ->setPassword('')
+// ;
 
-// Create the Mailer using your created Transport
-$mailer = new Swift_Mailer($transport);
+// // Create the Mailer using your created Transport
+// $mailer = new Swift_Mailer($transport);
 
-// Create a message
-$message = (new Swift_Message('Wonderful Subject'))
-  ->setFrom(['nwobodokenechukwu2@gmail.com' => 'Kenehukwu Nwobodo'])
-  ->setTo(['receiver@domain.org', 'other@domain.org' => 'A name'])
-  ->setBody('Hello there, thanks for subscribing for our lifestyle blog. We got your back.')
-  ;
+// // Create a message
+// $message = (new Swift_Message('Wonderful Subject'))
+//   ->setFrom(['nwobodokenechukwu2@gmail.com' => 'Kenehukwu Nwobodo'])
+//   ->setTo(['receiver@domain.org', 'other@domain.org' => 'A name'])
+//   ->setBody('Hello there, thanks for subscribing for our lifestyle blog. We got your back.')
+//   ;
 
-// Send the message
-$result = $mailer->send($message)
+// // Send the message
+// $result = $mailer->send($message)
 
 ?>
 
